@@ -3052,7 +3052,6 @@ Wire Wire Line
 Wire Wire Line
 	12050 16000 10900 16000
 NoConn ~ 12050 16300
-NoConn ~ 12050 16400
 Wire Wire Line
 	12050 16600 10900 16600
 Text Label 10900 15700 0    50   ~ 0
@@ -3508,22 +3507,6 @@ F 3 "~" H 23800 2900 50  0001 C CNN
 $EndComp
 Text Label 14900 16300 2    50   ~ 0
 HOLD
-Text Label 14900 16600 2    50   ~ 0
-GPB0
-Text Label 14900 16700 2    50   ~ 0
-GPB1
-Text Label 14900 16800 2    50   ~ 0
-GPB2
-Text Label 14900 16900 2    50   ~ 0
-GPB3
-Text Label 14900 17000 2    50   ~ 0
-GPB4
-Text Label 14900 17100 2    50   ~ 0
-GPB5
-Text Label 14900 17200 2    50   ~ 0
-GPB6
-Text Label 14900 17300 2    50   ~ 0
-GPB7
 Wire Wire Line
 	16800 15800 16050 15800
 Wire Wire Line
@@ -3540,22 +3523,6 @@ Wire Wire Line
 	16800 16400 16050 16400
 Wire Wire Line
 	16800 16500 16050 16500
-Text Label 16050 15800 0    50   ~ 0
-GPB0
-Text Label 16050 15900 0    50   ~ 0
-GPB1
-Text Label 16050 16000 0    50   ~ 0
-GPB2
-Text Label 16050 16100 0    50   ~ 0
-GPB3
-Text Label 16050 16200 0    50   ~ 0
-GPB4
-Text Label 16050 16300 0    50   ~ 0
-GPB5
-Text Label 16050 16400 0    50   ~ 0
-GPB6
-Text Label 16050 16500 0    50   ~ 0
-GPB7
 Wire Wire Line
 	9000 7850 7650 7850
 Wire Wire Line
@@ -3829,8 +3796,6 @@ Text Label 22600 3000 0    50   ~ 0
 BA3
 Text Label 14900 16000 2    50   ~ 0
 INT2
-Text Label 14900 15900 2    50   ~ 0
-INT1
 Wire Wire Line
 	13450 15800 14900 15800
 Wire Wire Line
@@ -4210,8 +4175,6 @@ Text Label 27150 6950 0    50   ~ 0
 MISO0
 Text Label 27150 7050 0    50   ~ 0
 SCK0
-Text Label 14900 15800 2    50   ~ 0
-~INT0
 Text Label 14900 15700 2    50   ~ 0
 ~RESET960
 $Comp
@@ -4233,10 +4196,6 @@ Text Label 28850 3350 0    50   ~ 0
 PA2
 Text Label 28850 3450 0    50   ~ 0
 PA3
-Text Label 31450 3250 2    50   ~ 0
-PA1
-Text Label 28850 3250 0    50   ~ 0
-PA1
 Text Label 28000 21350 1    50   ~ 0
 ~RESET960
 NoConn ~ 27900 21350
@@ -4247,5 +4206,45 @@ Wire Wire Line
 Text Label 27500 21350 1    50   ~ 0
 ~INT3
 Text Label 27600 21350 1    50   ~ 0
+~INT0
+Text Label 16050 15800 0    50   ~ 0
+GPA0
+Text Label 16050 15900 0    50   ~ 0
+GPA1
+Text Label 16050 16000 0    50   ~ 0
+GPA2
+Text Label 16050 16100 0    50   ~ 0
+GPA3
+Text Label 16050 16200 0    50   ~ 0
+GPA4
+Text Label 16050 16300 0    50   ~ 0
+GPA5
+Text Label 16050 16400 0    50   ~ 0
+GPA6
+Text Label 16050 16500 0    50   ~ 0
+GPA7
+Text Label 14900 16600 2    50   ~ 0
+GPA0
+Text Label 14900 16700 2    50   ~ 0
+GPA1
+Text Label 14900 16800 2    50   ~ 0
+GPA2
+Text Label 14900 16900 2    50   ~ 0
+GPA3
+Text Label 14900 17000 2    50   ~ 0
+GPA4
+Text Label 14900 17100 2    50   ~ 0
+GPA5
+Text Label 14900 17200 2    50   ~ 0
+GPA6
+Text Label 14900 17300 2    50   ~ 0
+GPA7
+Wire Wire Line
+	12050 16400 10900 16400
+Text Label 10900 16400 0    50   ~ 0
+INT1
+Text Label 28850 3250 0    50   ~ 0
+~INT0
+Text Label 31450 3250 2    50   ~ 0
 ~INT0
 $EndSCHEMATC

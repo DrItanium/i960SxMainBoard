@@ -4229,7 +4229,7 @@
   (gr_text +5V (at 107.23118 189.89802) (layer F.SilkS) (tstamp 61ACB32E)
     (effects (font (size 2 2) (thickness 0.1)))
   )
-  (gr_text "GPB0\nGPB1\nGPB2\nGPB3\nGPB4\nGPB5\nGPB6\nGPB7" (at 143.1036 33.8201 -90) (layer F.SilkS)
+  (gr_text "GPA0\nGPA1\nGPA2\nGPA3\nGPA4\nGPA5\nGPA6\nGPA7" (at 143.1036 33.8201 -90) (layer F.SilkS)
     (effects (font (size 1.6 0.8) (thickness 0.15)) (justify left))
   )
   (gr_line (start 186.84748 29.99232) (end 186.84748 199.82688) (layer Edge.Cuts) (width 0.1))
