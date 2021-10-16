@@ -195,4 +195,28 @@ Text HLabel 5350 3600 2    50   Input ~ 0
 INT0
 Text HLabel 5350 3700 2    50   Input ~ 0
 ~RESET
+Text HLabel 5350 2100 2    50   UnSpc ~ 0
+PA0
+Text HLabel 5350 2200 2    50   UnSpc ~ 0
+PA1
+Text HLabel 5350 2300 2    50   UnSpc ~ 0
+PA2
+Text HLabel 5350 2400 2    50   UnSpc ~ 0
+PA3
+Text HLabel 5350 2500 2    50   UnSpc ~ 0
+PA4
+Text HLabel 5350 2600 2    50   UnSpc ~ 0
+PA5
+Text HLabel 5350 2700 2    50   UnSpc ~ 0
+PA6
+Text HLabel 5350 2800 2    50   UnSpc ~ 0
+PA7
+Text HLabel 5350 3000 2    50   UnSpc ~ 0
+PB0
+Text HLabel 5350 3100 2    50   UnSpc ~ 0
+PB1
+Text HLabel 5350 3200 2    50   UnSpc ~ 0
+PB2
+Text HLabel 5350 3300 2    50   UnSpc ~ 0
+PB3
 $EndSCHEMATC
