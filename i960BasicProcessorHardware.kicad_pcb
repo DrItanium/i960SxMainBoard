@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 36)
+    (drawings 37)
     (tracks 1641)
     (zones 0)
     (modules 65)
@@ -723,7 +723,7 @@
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical (layer Front) (tedit 59FED5CC) (tstamp 61BAEA80)
-    (at 184.7215 67.59448)
+    (at 184.40654 58.74512)
     (descr "Through hole straight pin header, 1x12, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x12 2.54mm single row")
     (path /76BFAED2)
@@ -830,8 +830,8 @@
     )
   )
 
-  (module Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical (layer Front) (tedit 59FED5CC) (tstamp 61BAE95A)
-    (at 184.53862 45.00626)
+  (module Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical (layer Front) (tedit 59FED5CC) (tstamp 61BB2350)
+    (at 175.47082 71.41718)
     (descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x03 2.54mm single row")
     (path /769276F2)
@@ -4331,6 +4331,9 @@
     )
   )
 
+  (gr_text "OFF >\nHOLD\nON >" (at 173.2915 73.97496) (layer F.SilkS)
+    (effects (font (size 1.6 0.8) (thickness 0.1)) (justify right))
+  )
   (gr_text "ATTINY85 Independent Station" (at 112.78616 42.5069) (layer F.SilkS)
     (effects (font (size 0.8 0.8) (thickness 0.1)))
   )

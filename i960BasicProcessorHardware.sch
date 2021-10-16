@@ -3191,7 +3191,7 @@ Text Label 14950 12450 2    50   ~ 0
 A14
 Text Label 14950 12550 2    50   ~ 0
 A15
-Text Label 18200 17900 0    50   ~ 0
+Text Label 18200 17200 0    50   ~ 0
 ~LOCK
 Text Label 28850 3150 0    50   ~ 0
 W\~R~
@@ -3239,9 +3239,9 @@ $EndComp
 Connection ~ 28550 3900
 Wire Wire Line
 	28550 3900 28550 3650
-Text Label 18200 17300 0    50   ~ 0
+Text Label 18200 17400 0    50   ~ 0
 ~DEN
-Text Label 18200 17200 0    50   ~ 0
+Text Label 18200 17300 0    50   ~ 0
 DT\~R
 $Comp
 L Connector_Generic:Conn_02x39_Odd_Even J2
@@ -3486,9 +3486,9 @@ Connection ~ 31750 3900
 Wire Wire Line
 	31750 3900 31750 3650
 Wire Wire Line
-	19200 17300 18200 17300
+	19200 17400 18200 17400
 Wire Wire Line
-	19200 17200 18200 17200
+	19200 17300 18200 17300
 Wire Wire Line
 	16800 15800 16050 15800
 Wire Wire Line
@@ -3765,16 +3765,16 @@ Wire Wire Line
 Text Label 18200 17100 0    50   ~ 0
 ALE
 Wire Wire Line
+	19200 17700 18200 17700
+Wire Wire Line
 	19200 17600 18200 17600
 Wire Wire Line
 	19200 17500 18200 17500
-Wire Wire Line
-	19200 17400 18200 17400
-Text Label 18200 17600 0    50   ~ 0
+Text Label 18200 17700 0    50   ~ 0
 BA1
-Text Label 18200 17500 0    50   ~ 0
+Text Label 18200 17600 0    50   ~ 0
 BA2
-Text Label 18200 17400 0    50   ~ 0
+Text Label 18200 17500 0    50   ~ 0
 BA3
 Wire Wire Line
 	13450 15800 14900 15800
@@ -4371,29 +4371,63 @@ F 3 "~" H 19400 17500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	19200 17700 18200 17700
-Wire Wire Line
 	19200 17800 18200 17800
 Wire Wire Line
 	19200 17900 18200 17900
 Wire Wire Line
+	19200 17200 18200 17200
+Wire Wire Line
 	19200 18000 18200 18000
 Wire Wire Line
 	19200 18100 18200 18100
-Text Label 18200 17700 0    50   ~ 0
-HOLD_BREAKOUT
 Text Label 18200 17800 0    50   ~ 0
+HOLD_BREAKOUT
+Text Label 18200 17900 0    50   ~ 0
 HLDA
-Text Label 14900 16100 2    50   ~ 0
+Text Label 18200 18100 0    50   ~ 0
 ~INT3
-Text Label 14900 16000 2    50   ~ 0
-INT2
 NoConn ~ 14900 15800
 NoConn ~ 14900 15900
 NoConn ~ 14900 16200
 NoConn ~ 14900 16300
 NoConn ~ 14900 16400
 NoConn ~ 12050 16300
-NoConn ~ 18200 18000
-NoConn ~ 18200 18100
+$Comp
+L Connector_Generic:Conn_01x03 J10
+U 1 1 780859B4
+P 17000 18900
+F 0 "J10" H 17080 18942 50  0000 L CNN
+F 1 "Conn_01x03" H 17080 18851 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 17000 18900 50  0001 C CNN
+F 3 "~" H 17000 18900 50  0001 C CNN
+	1    17000 18900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16800 18800 15800 18800
+Wire Wire Line
+	15800 18800 15800 19450
+$Comp
+L power:GND #PWR042
+U 1 1 780859BC
+P 15800 19450
+F 0 "#PWR042" H 15800 19200 50  0001 C CNN
+F 1 "GND" H 15805 19277 50  0000 C CNN
+F 2 "" H 15800 19450 50  0001 C CNN
+F 3 "" H 15800 19450 50  0001 C CNN
+	1    15800 19450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16800 18900 15950 18900
+Wire Wire Line
+	16800 19000 15950 19000
+Text Label 15950 18900 0    50   ~ 0
+INT2
+Text Label 15950 19000 0    50   ~ 0
+INT2_BREAKOUT
+Text Label 18200 18000 0    50   ~ 0
+INT2_BREAKOUT
+NoConn ~ 14900 16000
+NoConn ~ 14900 16100
 $EndSCHEMATC
