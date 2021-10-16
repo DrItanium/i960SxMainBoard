@@ -108,8 +108,6 @@ Wire Wire Line
 	2800 1550 1650 1550
 Wire Wire Line
 	2800 1750 1650 1750
-Text HLabel 6350 5300 0    50   Input ~ 0
-SYS_CLK
 Wire Wire Line
 	4000 1550 5800 1550
 Wire Wire Line
@@ -371,35 +369,12 @@ Text Label 5350 4250 2    50   ~ 0
 RXD0
 Text Label 5350 4350 2    50   ~ 0
 TXD0
-Wire Wire Line
-	7150 5400 6350 5400
-Text Label 6350 5400 0    50   ~ 0
-EXTCLK
-Text Label 1650 1750 0    50   ~ 0
-EXTCLK
-Text HLabel 6350 5500 0    50   Input ~ 0
-PCLK
 Text Label 6350 6000 0    50   ~ 0
 ~PRG_RESET
 Text HLabel 5800 4250 2    50   UnSpc ~ 0
 PD0
 Text HLabel 5800 4350 2    50   UnSpc ~ 0
 PD1
-$Comp
-L Connector_Generic:Conn_01x03 J11
-U 1 1 7DB0129D
-P 7350 5400
-F 0 "J11" H 7430 5442 50  0000 L CNN
-F 1 "Conn_01x03" H 7430 5351 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7350 5400 50  0001 C CNN
-F 3 "~" H 7350 5400 50  0001 C CNN
-	1    7350 5400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6350 5300 7150 5300
-Wire Wire Line
-	7150 5500 6350 5500
 Wire Wire Line
 	7150 5900 6350 5900
 Text Label 6350 5900 0    50   ~ 0
@@ -433,4 +408,6 @@ Text Label 5650 2950 2    50   ~ 0
 MOSI
 Text Label 5650 3050 2    50   ~ 0
 MISO
+Text HLabel 1650 1750 0    50   Input ~ 0
+CLK
 $EndSCHEMATC

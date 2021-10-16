@@ -4429,7 +4429,7 @@ S 24750 1100 800  3500
 U 7D8CCC7A
 F0 "Sheet7D8CCC79" 50
 F1 "ATMEGAx4SeriesCoprocessor.sch" 50
-F2 "SYS_CLK" I R 25550 1350 50 
+F2 "CLK" I R 25550 1350 50 
 F3 "AREF" O R 25550 1250 50 
 F4 "PA0" U L 24750 1250 50 
 F5 "PA1" U L 24750 1350 50 
@@ -4464,7 +4464,6 @@ F33 "PD0" U L 24750 3800 50
 F34 "PD1" U L 24750 3900 50 
 F35 "PD7" U L 24750 4500 50 
 F36 "~SYS_RESET" I R 25550 1450 50 
-F37 "PCLK" I R 25550 1550 50 
 $EndSheet
 Wire Wire Line
 	25550 1250 26650 1250
@@ -4472,12 +4471,10 @@ Wire Wire Line
 	25550 1350 26650 1350
 Wire Wire Line
 	25550 1450 26650 1450
-Wire Wire Line
-	25550 1550 26650 1550
 Text Label 26650 1450 2    50   ~ 0
 ~MCU_RESET
 Text Label 26650 1350 2    50   ~ 0
-CLKO
+EXTCLK
 $Comp
 L Connector_Generic:Conn_01x01 J15
 U 1 1 7DFB4B1C
@@ -4586,8 +4583,6 @@ F 3 "" H 26300 6400 50  0001 C CNN
 	1    26300 6400
 	1    0    0    -1  
 $EndComp
-Text Label 26650 1550 2    50   ~ 0
-PCLK
 $Comp
 L power:+5V #PWR?
 U 1 1 7ECFB689
@@ -4601,4 +4596,29 @@ F 3 "" H 26300 5100 50  0001 C CNN
 	1    26300 5100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	23900 5350 23100 5350
+Text Label 23100 5350 0    50   ~ 0
+EXTCLK
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 7EDE66D8
+P 24100 5350
+AR Path="/7D8CCC7A/7EDE66D8" Ref="J?"  Part="1" 
+AR Path="/7EDE66D8" Ref="J?"  Part="1" 
+F 0 "J?" H 24180 5392 50  0000 L CNN
+F 1 "Conn_01x03" H 24180 5301 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 24100 5350 50  0001 C CNN
+F 3 "~" H 24100 5350 50  0001 C CNN
+	1    24100 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	23100 5250 23900 5250
+Wire Wire Line
+	23900 5450 23100 5450
+Text Label 23100 5450 0    50   ~ 0
+PCLK
+Text Label 23100 5250 0    50   ~ 0
+CLKO
 $EndSCHEMATC
