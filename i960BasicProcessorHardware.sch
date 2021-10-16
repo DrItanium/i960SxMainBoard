@@ -3766,10 +3766,6 @@ Text Label 28200 21350 1    50   ~ 0
 ~GPIO_CS
 Wire Wire Line
 	27900 20400 27900 21350
-Wire Wire Line
-	27500 20400 27500 21350
-Wire Wire Line
-	27600 20400 27600 21350
 $Comp
 L power:+5V #PWR031
 U 1 1 616E5AF1
@@ -3794,10 +3790,6 @@ Wire Wire Line
 	27700 21350 27700 20400
 Text Label 27700 21350 1    50   ~ 0
 ~MR0
-Text Label 27600 21350 1    50   ~ 0
-~INT3
-Text Label 27500 21350 1    50   ~ 0
-~INT0
 Wire Wire Line
 	10950 11850 12100 11850
 Wire Wire Line
@@ -3815,7 +3807,6 @@ F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 27900 20200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	28200 20400 28200 21350
-NoConn ~ 27900 21350
 Text Label 22600 2600 0    50   ~ 0
 ~AS
 Wire Wire Line
@@ -4248,4 +4239,13 @@ Text Label 28850 3250 0    50   ~ 0
 PA1
 Text Label 28000 21350 1    50   ~ 0
 ~RESET960
+NoConn ~ 27900 21350
+Wire Wire Line
+	27600 20400 27600 21350
+Wire Wire Line
+	27500 20400 27500 21350
+Text Label 27500 21350 1    50   ~ 0
+~INT3
+Text Label 27600 21350 1    50   ~ 0
+~INT0
 $EndSCHEMATC
