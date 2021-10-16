@@ -4089,27 +4089,10 @@ Text Label 27150 6950 0    50   ~ 0
 MISO0
 Text Label 27150 7050 0    50   ~ 0
 SCK0
-Text Label 14900 15700 2    50   ~ 0
-~RESET960
-$Comp
-L Connector_Generic:Conn_01x08 J1
-U 1 1 74CFC736
-P 17000 16100
-F 0 "J1" H 17080 16092 50  0000 L CNN
-F 1 "Conn_01x08" H 17080 16001 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 17000 16100 50  0001 C CNN
-F 3 "~" H 17000 16100 50  0001 C CNN
-	1    17000 16100
-	1    0    0    -1  
-$EndComp
-Text Label 31450 3350 2    50   ~ 0
-PA2
-Text Label 31450 3450 2    50   ~ 0
-PA3
-Text Label 28850 3350 0    50   ~ 0
-PA2
 Text Label 28850 3450 0    50   ~ 0
-PA3
+~RESET960
+Text Label 31450 3350 2    50   ~ 0
+~INT3
 Text Label 21450 13750 1    50   ~ 0
 ~RESET960
 Text Label 16050 15800 0    50   ~ 0
@@ -4339,24 +4322,8 @@ Text Label 15950 17900 0    50   ~ 0
 HOLD
 Text Label 15950 18000 0    50   ~ 0
 HOLD_BREAKOUT
-$Comp
-L Connector_Generic:Conn_01x12 J9
-U 1 1 76BFAED2
-P 19400 17500
-F 0 "J9" H 19480 17492 50  0000 L CNN
-F 1 "Conn_01x12" H 19480 17401 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 19400 17500 50  0001 C CNN
-F 3 "~" H 19400 17500 50  0001 C CNN
-	1    19400 17500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	19200 17200 18200 17200
-NoConn ~ 14900 15800
-NoConn ~ 14900 15900
-NoConn ~ 14900 16200
-NoConn ~ 14900 16300
-NoConn ~ 14900 16400
 NoConn ~ 12050 16300
 $Comp
 L Connector_Generic:Conn_01x03 J10
@@ -4392,8 +4359,6 @@ Text Label 15950 18900 0    50   ~ 0
 INT2
 Text Label 15950 19000 0    50   ~ 0
 INT2_BREAKOUT
-NoConn ~ 14900 16000
-NoConn ~ 14900 16100
 $Comp
 L Connector_Generic:Conn_01x08 J11
 U 1 1 782AFBD5
@@ -4410,16 +4375,12 @@ Wire Wire Line
 Wire Wire Line
 	19200 17900 18200 17900
 Wire Wire Line
-	19200 18100 18200 18100
-Wire Wire Line
 	19200 18000 18200 18000
 Text Label 18200 17800 0    50   ~ 0
 HOLD_BREAKOUT
 Text Label 18200 17900 0    50   ~ 0
 HLDA
 Text Label 18200 18000 0    50   ~ 0
-~INT3
-Text Label 18200 18100 0    50   ~ 0
 INT2_BREAKOUT
 Text Label 18200 17500 0    50   ~ 0
 BA3
@@ -4534,4 +4495,142 @@ $EndComp
 Wire Wire Line
 	21450 12650 21450 12450
 NoConn ~ 28000 21350
+Wire Wire Line
+	16800 16600 16050 16600
+Wire Wire Line
+	16800 16700 16050 16700
+Wire Wire Line
+	16800 16800 16050 16800
+Wire Wire Line
+	16800 16900 16050 16900
+Wire Wire Line
+	16800 17000 16050 17000
+Wire Wire Line
+	16800 17100 16050 17100
+Wire Wire Line
+	16800 17200 16050 17200
+Wire Wire Line
+	16800 17300 16050 17300
+Text Label 31450 3450 2    50   ~ 0
+~RESET960
+Text Label 28850 3350 0    50   ~ 0
+~INT3
+Text Label 14900 15700 2    50   ~ 0
+GPB0
+Text Label 14900 15800 2    50   ~ 0
+GPB1
+Text Label 14900 15900 2    50   ~ 0
+GPB2
+Text Label 14900 16000 2    50   ~ 0
+GPB3
+Text Label 14900 16100 2    50   ~ 0
+GPB4
+Text Label 14900 16200 2    50   ~ 0
+GPB5
+Text Label 14900 16300 2    50   ~ 0
+GPB6
+Text Label 14900 16400 2    50   ~ 0
+GPB7
+Text Label 16050 16600 0    50   ~ 0
+GPB0
+Text Label 16050 16700 0    50   ~ 0
+GPB1
+Text Label 16050 16800 0    50   ~ 0
+GPB2
+Text Label 16050 16900 0    50   ~ 0
+GPB3
+Text Label 16050 17000 0    50   ~ 0
+GPB4
+Text Label 16050 17100 0    50   ~ 0
+GPB5
+Text Label 16050 17200 0    50   ~ 0
+GPB6
+Text Label 16050 17300 0    50   ~ 0
+GPB7
+$Comp
+L Connector_Generic:Conn_02x16_Odd_Even J?
+U 1 1 79DF032E
+P 17000 16500
+F 0 "J?" H 17050 17417 50  0000 C CNN
+F 1 "Conn_02x16_Odd_Even" H 17050 17326 50  0000 C CNN
+F 2 "" H 17000 16500 50  0001 C CNN
+F 3 "~" H 17000 16500 50  0001 C CNN
+	1    17000 16500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17300 15800 18050 15800
+Wire Wire Line
+	17300 15900 18050 15900
+Wire Wire Line
+	17300 16000 18050 16000
+Wire Wire Line
+	17300 16100 18050 16100
+Wire Wire Line
+	17300 16200 18050 16200
+Wire Wire Line
+	17300 16300 18050 16300
+Wire Wire Line
+	17300 16400 18050 16400
+Wire Wire Line
+	17300 16500 18050 16500
+Text Label 18050 15800 2    50   ~ 0
+GPA0
+Text Label 18050 15900 2    50   ~ 0
+GPA1
+Text Label 18050 16000 2    50   ~ 0
+GPA2
+Text Label 18050 16100 2    50   ~ 0
+GPA3
+Text Label 18050 16200 2    50   ~ 0
+GPA4
+Text Label 18050 16300 2    50   ~ 0
+GPA5
+Text Label 18050 16400 2    50   ~ 0
+GPA6
+Text Label 18050 16500 2    50   ~ 0
+GPA7
+Wire Wire Line
+	17300 16600 18050 16600
+Wire Wire Line
+	17300 16700 18050 16700
+Wire Wire Line
+	17300 16800 18050 16800
+Wire Wire Line
+	17300 16900 18050 16900
+Wire Wire Line
+	17300 17000 18050 17000
+Wire Wire Line
+	17300 17100 18050 17100
+Wire Wire Line
+	17300 17200 18050 17200
+Wire Wire Line
+	17300 17300 18050 17300
+Text Label 18050 16600 2    50   ~ 0
+GPB0
+Text Label 18050 16700 2    50   ~ 0
+GPB1
+Text Label 18050 16800 2    50   ~ 0
+GPB2
+Text Label 18050 16900 2    50   ~ 0
+GPB3
+Text Label 18050 17000 2    50   ~ 0
+GPB4
+Text Label 18050 17100 2    50   ~ 0
+GPB5
+Text Label 18050 17200 2    50   ~ 0
+GPB6
+Text Label 18050 17300 2    50   ~ 0
+GPB7
+$Comp
+L Connector_Generic:Conn_01x11 J?
+U 1 1 79F7F59B
+P 19400 17500
+F 0 "J?" H 19480 17542 50  0000 L CNN
+F 1 "Conn_01x11" H 19480 17451 50  0000 L CNN
+F 2 "" H 19400 17500 50  0001 C CNN
+F 3 "~" H 19400 17500 50  0001 C CNN
+	1    19400 17500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
