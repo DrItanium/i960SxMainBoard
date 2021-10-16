@@ -4145,7 +4145,7 @@
   (gr_text +5V (at 109.90834 43.61942) (layer F.SilkS)
     (effects (font (size 2 2) (thickness 0.2)))
   )
-  (gr_text "i960Sx Type 1 Main Board \n(C) 2021 Joshua Scoggins\nREV 1" (at 88.88984 195.16598) (layer F.SilkS)
+  (gr_text "i960Sx Type 1 Main Board \n(C) 2021 Joshua Scoggins\nREV 2" (at 88.88984 195.16598) (layer F.SilkS)
     (effects (font (size 0.8 0.8) (thickness 0.1)))
   )
   (gr_text "~AS\nALE\nDT\\~R~\n~DEN\nBA3\nBA2\nBA1" (at 182.12308 75.2348) (layer F.SilkS)
