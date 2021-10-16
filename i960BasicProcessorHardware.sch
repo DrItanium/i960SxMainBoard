@@ -4,10 +4,10 @@ EELAYER END
 $Descr A1 33110 23386
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "i960Sx Basic Processor Hardware Board"
+Date "2021-10-16"
+Rev "3"
+Comp "Joshua Scoggins"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -3192,9 +3192,7 @@ Text Label 14950 12450 2    50   ~ 0
 A14
 Text Label 14950 12550 2    50   ~ 0
 A15
-Text Label 14900 16200 2    50   ~ 0
-HLDA
-Text Label 14900 16400 2    50   ~ 0
+Text Label 18200 17900 0    50   ~ 0
 ~LOCK
 Text Label 28850 3150 0    50   ~ 0
 W\~R~
@@ -3244,9 +3242,9 @@ Wire Wire Line
 	28550 3900 28550 3650
 Text Label 14900 16100 2    50   ~ 0
 ~INT3
-Text Label 22600 2900 0    50   ~ 0
+Text Label 18200 17300 0    50   ~ 0
 ~DEN
-Text Label 22600 2800 0    50   ~ 0
+Text Label 18200 17200 0    50   ~ 0
 DT\~R
 $Comp
 L Connector_Generic:Conn_02x39_Odd_Even J2
@@ -3491,22 +3489,9 @@ Connection ~ 31750 3900
 Wire Wire Line
 	31750 3900 31750 3650
 Wire Wire Line
-	23600 2900 22600 2900
+	19200 17300 18200 17300
 Wire Wire Line
-	23600 2800 22600 2800
-$Comp
-L Connector_Generic:Conn_01x07 J3
-U 1 1 6B9E2113
-P 23800 2900
-F 0 "J3" H 23880 2942 50  0000 L CNN
-F 1 "Conn_01x07" H 23880 2851 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 23800 2900 50  0001 C CNN
-F 3 "~" H 23800 2900 50  0001 C CNN
-	1    23800 2900
-	1    0    0    -1  
-$EndComp
-Text Label 14900 16300 2    50   ~ 0
-HOLD
+	19200 17200 18200 17200
 Wire Wire Line
 	16800 15800 16050 15800
 Wire Wire Line
@@ -3774,25 +3759,25 @@ F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 27900 20200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	28200 20400 28200 21350
-Text Label 22600 2600 0    50   ~ 0
+Text Label 18200 17000 0    50   ~ 0
 ~AS
 Wire Wire Line
-	23600 2600 22600 2600
+	19200 17000 18200 17000
 Wire Wire Line
-	23600 2700 22600 2700
-Text Label 22600 2700 0    50   ~ 0
+	19200 17100 18200 17100
+Text Label 18200 17100 0    50   ~ 0
 ALE
 Wire Wire Line
-	23600 3200 22600 3200
+	19200 17600 18200 17600
 Wire Wire Line
-	23600 3100 22600 3100
+	19200 17500 18200 17500
 Wire Wire Line
-	23600 3000 22600 3000
-Text Label 22600 3200 0    50   ~ 0
+	19200 17400 18200 17400
+Text Label 18200 17600 0    50   ~ 0
 BA1
-Text Label 22600 3100 0    50   ~ 0
+Text Label 18200 17500 0    50   ~ 0
 BA2
-Text Label 22600 3000 0    50   ~ 0
+Text Label 18200 17400 0    50   ~ 0
 BA3
 Text Label 14900 16000 2    50   ~ 0
 INT2
@@ -4198,7 +4183,6 @@ Text Label 28850 3450 0    50   ~ 0
 PA3
 Text Label 28000 21350 1    50   ~ 0
 ~RESET960
-NoConn ~ 27900 21350
 Wire Wire Line
 	27600 20400 27600 21350
 Wire Wire Line
@@ -4247,4 +4231,216 @@ Text Label 28850 3250 0    50   ~ 0
 ~INT0
 Text Label 31450 3250 2    50   ~ 0
 ~INT0
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85-20PU U18
+U 1 1 75A24F02
+P 13450 1600
+F 0 "U18" H 12921 1646 50  0000 R CNN
+F 1 "ATtiny85-20PU" H 13250 1000 50  0000 R CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 13450 1600 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 13450 1600 50  0001 C CNN
+	1    13450 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13450 2200 13450 2550
+Wire Wire Line
+	13450 2550 12550 2550
+Wire Wire Line
+	12550 2550 12550 1800
+Wire Wire Line
+	12550 750  13450 750 
+Wire Wire Line
+	13450 750  13450 1000
+$Comp
+L power:+5V #PWR0104
+U 1 1 75B79518
+P 13450 750
+F 0 "#PWR0104" H 13450 600 50  0001 C CNN
+F 1 "+5V" H 13465 923 50  0000 C CNN
+F 2 "" H 13450 750 50  0001 C CNN
+F 3 "" H 13450 750 50  0001 C CNN
+	1    13450 750 
+	1    0    0    -1  
+$EndComp
+Connection ~ 13450 750 
+$Comp
+L Device:C C27
+U 1 1 75B7AC9D
+P 12550 1650
+F 0 "C27" H 12665 1696 50  0000 L CNN
+F 1 "0.1uF" H 12665 1605 50  0000 L CNN
+F 2 "" H 12588 1500 50  0001 C CNN
+F 3 "~" H 12550 1650 50  0001 C CNN
+	1    12550 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12550 1500 12550 750 
+Wire Wire Line
+	14050 1300 14850 1300
+Wire Wire Line
+	14050 1400 14850 1400
+Wire Wire Line
+	14050 1500 14850 1500
+Wire Wire Line
+	14050 1600 14850 1600
+Wire Wire Line
+	14050 1700 14850 1700
+Wire Wire Line
+	14050 1800 14850 1800
+Text Label 14850 1800 2    50   ~ 0
+~RESET85
+Text Label 14850 1300 2    50   ~ 0
+ATTINY85_PB0
+Text Label 14850 1400 2    50   ~ 0
+ATTINY85_PB1
+Text Label 14850 1500 2    50   ~ 0
+ATTINY85_PB2
+Text Label 14850 1600 2    50   ~ 0
+ATTINY85_PB3
+Text Label 14850 1700 2    50   ~ 0
+ATTINY85_PB4
+Text Label 27900 21350 1    50   ~ 0
+~RESET85
+$Comp
+L power:GND #PWR?
+U 1 1 76237B26
+P 13450 2550
+AR Path="/640CD6D6/76237B26" Ref="#PWR?"  Part="1" 
+AR Path="/76237B26" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H 13450 2300 50  0001 C CNN
+F 1 "GND" H 13455 2377 50  0000 C CNN
+F 2 "" H 13450 2550 50  0001 C CNN
+F 3 "" H 13450 2550 50  0001 C CNN
+	1    13450 2550
+	1    0    0    -1  
+$EndComp
+Connection ~ 13450 2550
+$Comp
+L Connector_Generic:Conn_01x06 J8
+U 1 1 7623A53D
+P 16850 1500
+F 0 "J8" H 16930 1492 50  0000 L CNN
+F 1 "Conn_01x06" H 16930 1401 50  0000 L CNN
+F 2 "" H 16850 1500 50  0001 C CNN
+F 3 "~" H 16850 1500 50  0001 C CNN
+	1    16850 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16650 1300 15950 1300
+Wire Wire Line
+	16650 1400 15950 1400
+Wire Wire Line
+	16650 1500 15950 1500
+Wire Wire Line
+	16650 1600 15950 1600
+Wire Wire Line
+	16650 1700 15950 1700
+Wire Wire Line
+	16650 1800 15950 1800
+Text Label 15950 1800 0    50   ~ 0
+~RESET85
+Text Label 15950 1700 0    50   ~ 0
+ATTINY85_PB4
+Text Label 15950 1600 0    50   ~ 0
+ATTINY85_PB3
+Text Label 15950 1500 0    50   ~ 0
+ATTINY85_PB2
+Text Label 15950 1400 0    50   ~ 0
+ATTINY85_PB1
+Text Label 15950 1300 0    50   ~ 0
+ATTINY85_PB0
+$Comp
+L Switch:SW_Push SW1
+U 1 1 76654931
+P 15400 2400
+F 0 "SW1" H 15400 2685 50  0000 C CNN
+F 1 "SW_Push" H 15400 2594 50  0000 C CNN
+F 2 "" H 15400 2600 50  0001 C CNN
+F 3 "~" H 15400 2600 50  0001 C CNN
+	1    15400 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15200 2400 14850 2400
+Wire Wire Line
+	14850 2400 14850 2600
+$Comp
+L power:GND #PWR?
+U 1 1 7670668C
+P 14850 2600
+AR Path="/640CD6D6/7670668C" Ref="#PWR?"  Part="1" 
+AR Path="/7670668C" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H 14850 2350 50  0001 C CNN
+F 1 "GND" H 14855 2427 50  0000 C CNN
+F 2 "" H 14850 2600 50  0001 C CNN
+F 3 "" H 14850 2600 50  0001 C CNN
+	1    14850 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15600 2400 16250 2400
+Text Label 16250 2400 2    50   ~ 0
+~RESET85
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 769276F2
+P 17000 17900
+F 0 "J?" H 17080 17942 50  0000 L CNN
+F 1 "Conn_01x03" H 17080 17851 50  0000 L CNN
+F 2 "" H 17000 17900 50  0001 C CNN
+F 3 "~" H 17000 17900 50  0001 C CNN
+	1    17000 17900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16800 17800 15800 17800
+Wire Wire Line
+	15800 17800 15800 18450
+$Comp
+L power:GND #PWR?
+U 1 1 769DBBCF
+P 15800 18450
+F 0 "#PWR?" H 15800 18200 50  0001 C CNN
+F 1 "GND" H 15805 18277 50  0000 C CNN
+F 2 "" H 15800 18450 50  0001 C CNN
+F 3 "" H 15800 18450 50  0001 C CNN
+	1    15800 18450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16800 17900 15950 17900
+Wire Wire Line
+	16800 18000 15950 18000
+Text Label 15950 17900 0    50   ~ 0
+HOLD
+Text Label 15950 18000 0    50   ~ 0
+HOLD_BREAKOUT
+$Comp
+L Connector_Generic:Conn_01x12 J?
+U 1 1 76BFAED2
+P 19400 17500
+F 0 "J?" H 19480 17492 50  0000 L CNN
+F 1 "Conn_01x12" H 19480 17401 50  0000 L CNN
+F 2 "" H 19400 17500 50  0001 C CNN
+F 3 "~" H 19400 17500 50  0001 C CNN
+	1    19400 17500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19200 17700 18200 17700
+Wire Wire Line
+	19200 17800 18200 17800
+Wire Wire Line
+	19200 17900 18200 17900
+Wire Wire Line
+	19200 18000 18200 18000
+Wire Wire Line
+	19200 18100 18200 18100
+Text Label 18200 17700 0    50   ~ 0
+HOLD_BREAKOUT
+Text Label 18200 17800 0    50   ~ 0
+HLDA
 $EndSCHEMATC
