@@ -2099,7 +2099,7 @@ AR Path="/640CD6D6/643B6AF2" Ref="U?"  Part="1"
 AR Path="/643B6AF2" Ref="U16"  Part="1" 
 F 0 "U16" H 25300 13203 60  0000 C CNN
 F 1 "SN74LVC245AN" H 25300 13097 60  0000 C CNN
-F 2 "digikey-footprints:DIP-20_W7.62mm" H 25600 12900 60  0001 L CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 25600 12900 60  0001 L CNN
 F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc245a" H 25600 13000 60  0001 L CNN
 F 4 "296-8503-5-ND" H 25600 13100 60  0001 L CNN "Digi-Key_PN"
 F 5 "SN74LVC245AN" H 25600 13200 60  0001 L CNN "MPN"
