@@ -1,0 +1,500 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L dk_Logic-Buffers-Drivers-Receivers-Transceivers:SN74LVC245AN U3
+U 1 1 68A87D96
+P 13600 8000
+F 0 "U3" H 13500 8503 60  0000 C CNN
+F 1 "SN74LVC245AN" H 13500 8397 60  0000 C CNN
+F 2 "digikey-footprints:DIP-20_W7.62mm" H 13800 8200 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc245a" H 13800 8300 60  0001 L CNN
+F 4 "296-8503-5-ND" H 13800 8400 60  0001 L CNN "Digi-Key_PN"
+F 5 "SN74LVC245AN" H 13800 8500 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 13800 8600 60  0001 L CNN "Category"
+F 7 "Logic - Buffers, Drivers, Receivers, Transceivers" H 13800 8700 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc245a" H 13800 8800 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/SN74LVC245AN/296-8503-5-ND/377483" H 13800 8900 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC TXRX NON-INVERT 3.6V 20DIP" H 13800 9000 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 13800 9100 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 13800 9200 60  0001 L CNN "Status"
+	1    13600 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13200 8800 12950 8800
+Wire Wire Line
+	12950 8800 12950 7450
+Wire Wire Line
+	12950 7450 13600 7450
+Wire Wire Line
+	13600 7450 13600 7700
+Wire Wire Line
+	13600 7450 14050 7450
+Wire Wire Line
+	14050 7450 14050 8950
+Wire Wire Line
+	14050 9450 13600 9450
+Wire Wire Line
+	13600 9450 13600 9200
+Connection ~ 13600 7450
+Wire Wire Line
+	13200 8500 12400 8500
+Wire Wire Line
+	13200 8400 12400 8400
+Wire Wire Line
+	13200 8000 12400 8000
+Wire Wire Line
+	13200 8100 12400 8100
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 68C092EA
+P 13600 7450
+F 0 "#PWR0101" H 13600 7300 50  0001 C CNN
+F 1 "+3.3V" H 13615 7623 50  0000 C CNN
+F 2 "" H 13600 7450 50  0001 C CNN
+F 3 "" H 13600 7450 50  0001 C CNN
+	1    13600 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 68C098A7
+P 14050 9100
+F 0 "C1" H 14165 9146 50  0000 L CNN
+F 1 "0.1uF" H 14165 9055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 14088 8950 50  0001 C CNN
+F 3 "~" H 14050 9100 50  0001 C CNN
+	1    14050 9100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	14050 9250 14050 9450
+$Comp
+L power:GND #PWR0102
+U 1 1 68C09D21
+P 13600 9450
+F 0 "#PWR0102" H 13600 9200 50  0001 C CNN
+F 1 "GND" H 13605 9277 50  0000 C CNN
+F 2 "" H 13600 9450 50  0001 C CNN
+F 3 "" H 13600 9450 50  0001 C CNN
+	1    13600 9450
+	1    0    0    -1  
+$EndComp
+Connection ~ 13600 9450
+$Comp
+L 74xx:74LS08 U5
+U 1 1 617E5646
+P 10900 8700
+F 0 "U5" H 10900 9025 50  0000 C CNN
+F 1 "74LS08" H 10900 8934 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 10900 8700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 10900 8700 50  0001 C CNN
+	1    10900 8700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 8600 9750 8600
+Wire Wire Line
+	10600 8800 9750 8800
+Wire Wire Line
+	11200 8700 11800 8700
+Text Label 11800 8700 2    50   ~ 0
+~PSRAM_GATE_EN
+Text Label 9750 8600 0    50   ~ 0
+~PSRAM_EN1
+Text Label 9750 8800 0    50   ~ 0
+~PSRAM_EN2
+$Comp
+L 74xx:74LS125 U6
+U 1 1 6184A9F8
+P 9300 10450
+F 0 "U6" H 9300 10767 50  0000 C CNN
+F 1 "74LS125" H 9300 10676 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 9300 10450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 9300 10450 50  0001 C CNN
+	1    9300 10450
+	1    0    0    -1  
+$EndComp
+Text Label 12400 8500 0    50   ~ 0
+MOSI0
+Text Label 12400 8400 0    50   ~ 0
+SCK0
+Text Label 12400 8100 0    50   ~ 0
+~PSRAM_EN1
+Text Label 12400 8000 0    50   ~ 0
+~PSRAM_EN2
+Text Label 12400 8900 0    50   ~ 0
+~PSRAM_GATE_EN
+Wire Wire Line
+	9300 10700 9300 10900
+Wire Wire Line
+	9300 10900 10000 10900
+Text Label 10000 10900 2    50   ~ 0
+~PSRAM_GATE_EN
+Wire Wire Line
+	9000 10450 7950 10450
+Text Label 7950 10450 0    50   ~ 0
+3V_MISO0
+Wire Wire Line
+	9600 10450 10000 10450
+Text Label 10000 10450 2    50   ~ 0
+MISO0
+$Comp
+L 74xx:74LS125 U6
+U 2 1 618CA794
+P 10900 7750
+F 0 "U6" H 10900 8067 50  0000 C CNN
+F 1 "74LS125" H 10900 7976 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 10900 7750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS125" H 10900 7750 50  0001 C CNN
+	2    10900 7750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10900 8000 10900 8200
+Wire Wire Line
+	10900 8200 11600 8200
+Text Label 11600 8200 2    50   ~ 0
+~PSRAM_GATE_EN
+Wire Wire Line
+	11200 7750 11600 7750
+Text Label 11600 7750 2    50   ~ 0
+MISO1
+Wire Wire Line
+	10600 7750 9550 7750
+Text Label 9550 7750 0    50   ~ 0
+3V_MISO1
+$Comp
+L NewICs:Adafruit_FeatherWing U4
+U 1 1 61978B24
+P 6200 10350
+F 0 "U4" H 6200 12355 50  0000 C CNN
+F 1 "Adafruit_FeatherWing (PSRAM Featherwing)" H 6200 12264 50  0000 C CNN
+F 2 "imciner2/KiCad-Libraries/modules/Modules.pretty:ADAFRUIT_FEATHER" H 6200 10350 50  0001 C CNN
+F 3 "" H 6200 10350 50  0001 C CNN
+F 4 "BUS0" H 6200 12173 50  0000 C CNN "Notes"
+	1    6200 10350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 8700 4800 8700
+Wire Wire Line
+	5700 8900 4800 8900
+Wire Wire Line
+	5700 9100 4800 9100
+Wire Wire Line
+	5700 9200 4800 9200
+Wire Wire Line
+	5700 9300 4800 9300
+Wire Wire Line
+	5700 9400 4800 9400
+Wire Wire Line
+	5700 9500 4800 9500
+Wire Wire Line
+	5700 9600 4800 9600
+Wire Wire Line
+	5700 9700 4800 9700
+Wire Wire Line
+	5700 9800 4800 9800
+Wire Wire Line
+	5700 9900 4800 9900
+Wire Wire Line
+	5700 10000 4800 10000
+Wire Wire Line
+	5700 10100 4800 10100
+Wire Wire Line
+	5700 10200 4800 10200
+Wire Wire Line
+	6700 9100 7600 9100
+Wire Wire Line
+	6700 9200 7600 9200
+Wire Wire Line
+	6700 9400 7600 9400
+Wire Wire Line
+	6700 9500 7600 9500
+Wire Wire Line
+	6700 9600 7600 9600
+Wire Wire Line
+	6700 9700 7600 9700
+Wire Wire Line
+	6700 9800 7600 9800
+Wire Wire Line
+	6700 9900 7600 9900
+Wire Wire Line
+	6700 10000 7600 10000
+Wire Wire Line
+	6700 10100 7600 10100
+Wire Wire Line
+	6700 10200 7600 10200
+Wire Wire Line
+	4450 8800 4450 8450
+Wire Wire Line
+	4450 8800 5700 8800
+$Comp
+L power:+3.3V #PWR07
+U 1 1 61C9ABD8
+P 4450 8450
+F 0 "#PWR07" H 4450 8300 50  0001 C CNN
+F 1 "+3.3V" H 4465 8623 50  0000 C CNN
+F 2 "" H 4450 8450 50  0001 C CNN
+F 3 "" H 4450 8450 50  0001 C CNN
+	1    4450 8450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4800 8900
+Wire Wire Line
+	4450 9000 4450 10800
+Wire Wire Line
+	4450 9000 5700 9000
+$Comp
+L power:GND #PWR08
+U 1 1 61CDA385
+P 4450 10800
+F 0 "#PWR08" H 4450 10550 50  0001 C CNN
+F 1 "GND" H 4455 10627 50  0000 C CNN
+F 2 "" H 4450 10800 50  0001 C CNN
+F 3 "" H 4450 10800 50  0001 C CNN
+	1    4450 10800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4800 8700
+NoConn ~ 4800 9100
+NoConn ~ 4800 9200
+NoConn ~ 4800 9300
+NoConn ~ 4800 9400
+NoConn ~ 4800 9500
+NoConn ~ 4800 9600
+NoConn ~ 7600 9600
+NoConn ~ 7600 9700
+NoConn ~ 7600 9800
+NoConn ~ 7600 9900
+NoConn ~ 7600 10000
+NoConn ~ 7600 10100
+NoConn ~ 7600 10200
+NoConn ~ 7600 9100
+NoConn ~ 7600 9200
+NoConn ~ 4800 10000
+NoConn ~ 4800 10100
+NoConn ~ 4800 10200
+Text Label 7600 9500 2    50   ~ 0
+~3V_PSRAM_EN1
+Text Label 7600 9400 2    50   ~ 0
+~3V_PSRAM_EN2
+Text Label 4800 9800 0    50   ~ 0
+3V_MOSI0
+Text Label 4800 9700 0    50   ~ 0
+3V_SCK0
+Text Label 4800 9900 0    50   ~ 0
+3V_MISO0
+Wire Wire Line
+	7950 9300 7950 8450
+Wire Wire Line
+	6700 9300 7950 9300
+$Comp
+L power:+5V #PWR014
+U 1 1 6212C032
+P 7950 8450
+F 0 "#PWR014" H 7950 8300 50  0001 C CNN
+F 1 "+5V" V 8050 8450 50  0000 C CNN
+F 2 "" H 7950 8450 50  0000 C CNN
+F 3 "" H 7950 8450 50  0000 C CNN
+	1    7950 8450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	13200 8900 12400 8900
+$Comp
+L power:+5V #PWR06
+U 1 1 62155267
+P 4000 8450
+F 0 "#PWR06" H 4000 8300 50  0001 C CNN
+F 1 "+5V" V 4100 8450 50  0000 C CNN
+F 2 "" H 4000 8450 50  0000 C CNN
+F 3 "" H 4000 8450 50  0000 C CNN
+	1    4000 8450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 9400 4000 9400
+Wire Wire Line
+	4000 9400 4000 8450
+Text Label 1050 9800 0    50   ~ 0
+3V_SCK1
+Text Label 1050 10000 0    50   ~ 0
+3V_MISO1
+Text Label 1050 9900 0    50   ~ 0
+3V_MOSI1
+Text Label 3850 9500 2    50   ~ 0
+~3V_PSRAM_EN2
+Text Label 3850 9600 2    50   ~ 0
+~3V_PSRAM_EN1
+NoConn ~ 1050 10300
+NoConn ~ 1050 10200
+NoConn ~ 1050 10100
+NoConn ~ 3850 9300
+NoConn ~ 3850 9200
+NoConn ~ 3850 10300
+NoConn ~ 3850 10200
+NoConn ~ 3850 10100
+NoConn ~ 3850 10000
+NoConn ~ 3850 9900
+NoConn ~ 3850 9800
+NoConn ~ 3850 9700
+NoConn ~ 1050 9700
+NoConn ~ 1050 9600
+NoConn ~ 1050 9500
+NoConn ~ 1050 9400
+NoConn ~ 1050 9300
+NoConn ~ 1050 9200
+NoConn ~ 1050 8800
+$Comp
+L power:GND #PWR05
+U 1 1 61F4CB7D
+P 700 10900
+F 0 "#PWR05" H 700 10650 50  0001 C CNN
+F 1 "GND" H 705 10727 50  0000 C CNN
+F 2 "" H 700 10900 50  0001 C CNN
+F 3 "" H 700 10900 50  0001 C CNN
+	1    700  10900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	700  9100 1950 9100
+Wire Wire Line
+	700  9100 700  10900
+NoConn ~ 1050 9000
+$Comp
+L power:+3.3V #PWR04
+U 1 1 61F4CB74
+P 700 8550
+F 0 "#PWR04" H 700 8400 50  0001 C CNN
+F 1 "+3.3V" H 715 8723 50  0000 C CNN
+F 2 "" H 700 8550 50  0001 C CNN
+F 3 "" H 700 8550 50  0001 C CNN
+	1    700  8550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	700  8900 1950 8900
+Wire Wire Line
+	700  8900 700  8550
+Wire Wire Line
+	2950 10300 3850 10300
+Wire Wire Line
+	2950 10200 3850 10200
+Wire Wire Line
+	2950 10100 3850 10100
+Wire Wire Line
+	2950 10000 3850 10000
+Wire Wire Line
+	2950 9900 3850 9900
+Wire Wire Line
+	2950 9800 3850 9800
+Wire Wire Line
+	2950 9700 3850 9700
+Wire Wire Line
+	2950 9600 3850 9600
+Wire Wire Line
+	2950 9500 3850 9500
+Wire Wire Line
+	2950 9300 3850 9300
+Wire Wire Line
+	2950 9200 3850 9200
+Wire Wire Line
+	1950 10300 1050 10300
+Wire Wire Line
+	1950 10200 1050 10200
+Wire Wire Line
+	1950 10100 1050 10100
+Wire Wire Line
+	1950 10000 1050 10000
+Wire Wire Line
+	1950 9900 1050 9900
+Wire Wire Line
+	1950 9800 1050 9800
+Wire Wire Line
+	1950 9700 1050 9700
+Wire Wire Line
+	1950 9600 1050 9600
+Wire Wire Line
+	1950 9500 1050 9500
+Wire Wire Line
+	1950 9400 1050 9400
+Wire Wire Line
+	1950 9300 1050 9300
+Wire Wire Line
+	1950 9200 1050 9200
+Wire Wire Line
+	1950 9000 1050 9000
+Wire Wire Line
+	1950 8800 1050 8800
+$Comp
+L NewICs:Adafruit_FeatherWing U2
+U 1 1 61F4CB52
+P 2450 10450
+F 0 "U2" H 2450 12455 50  0000 C CNN
+F 1 "Adafruit_FeatherWing (PSRAM Featherwing)" H 2450 12364 50  0000 C CNN
+F 2 "imciner2/KiCad-Libraries/modules/Modules.pretty:ADAFRUIT_FEATHER" H 2450 10450 50  0001 C CNN
+F 3 "" H 2450 10450 50  0001 C CNN
+F 4 "BUS1" H 2450 12273 50  0000 C CNN "Notes"
+	1    2450 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14600 8800 13800 8800
+Wire Wire Line
+	14600 8700 13800 8700
+Text Label 12400 8300 0    50   ~ 0
+MOSI1
+Text Label 12400 8200 0    50   ~ 0
+SCK1
+Wire Wire Line
+	13200 8300 12400 8300
+Wire Wire Line
+	13200 8200 12400 8200
+Wire Wire Line
+	13200 8700 12400 8700
+Wire Wire Line
+	13200 8600 12400 8600
+NoConn ~ 12400 8600
+NoConn ~ 12400 8700
+NoConn ~ 14600 8700
+NoConn ~ 14600 8800
+Text Label 14600 8500 2    50   ~ 0
+3V_SCK0
+Text Label 14600 8600 2    50   ~ 0
+3V_MOSI0
+Wire Wire Line
+	14600 8500 13800 8500
+Wire Wire Line
+	14600 8600 13800 8600
+Text Label 14600 8100 2    50   ~ 0
+~3V_PSRAM_EN2
+Text Label 14600 8200 2    50   ~ 0
+~3V_PSRAM_EN1
+Wire Wire Line
+	14600 8200 13800 8200
+Wire Wire Line
+	14600 8100 13800 8100
+Text Label 14600 8300 2    50   ~ 0
+3V_SCK1
+Text Label 14600 8400 2    50   ~ 0
+3V_MOSI1
+Wire Wire Line
+	14600 8400 13800 8400
+Wire Wire Line
+	14600 8300 13800 8300
+$EndSCHEMATC
