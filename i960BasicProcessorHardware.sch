@@ -2042,8 +2042,6 @@ Text Label 28850 2150 0    50   ~ 0
 PD6
 Text Label 28850 2250 0    50   ~ 0
 PD7
-Text Label 28850 2750 0    50   ~ 0
-PC4
 Wire Wire Line
 	29900 4050 28550 4050
 Wire Wire Line
@@ -3201,7 +3199,7 @@ Text Label 14900 16400 2    50   ~ 0
 ~LOCK
 Text Label 28850 3150 0    50   ~ 0
 W\~R~
-Text Label 28850 3250 0    50   ~ 0
+Text Label 28850 2750 0    50   ~ 0
 ~MCU_READY
 $Comp
 L power:PWR_FLAG #FLG01
@@ -3398,8 +3396,6 @@ Text Label 31450 2150 2    50   ~ 0
 PD6
 Text Label 31450 2250 2    50   ~ 0
 PD7
-Text Label 31450 2750 2    50   ~ 0
-PC4
 Wire Wire Line
 	30400 4050 31750 4050
 Wire Wire Line
@@ -3451,7 +3447,7 @@ F 3 "" H 31750 3650 50  0001 C CNN
 $EndComp
 Text Label 31450 3150 2    50   ~ 0
 W\~R~
-Text Label 31450 3250 2    50   ~ 0
+Text Label 31450 2750 2    50   ~ 0
 ~MCU_READY
 $Comp
 L power:PWR_FLAG #FLG0101
@@ -3887,7 +3883,6 @@ NoConn ~ 19800 2650
 NoConn ~ 19800 2750
 NoConn ~ 19800 2250
 NoConn ~ 19800 2350
-NoConn ~ 28000 21350
 $Comp
 L Device:LED D1
 U 1 1 73F004F6
@@ -4229,12 +4224,12 @@ Text Label 14900 15800 2    50   ~ 0
 Text Label 14900 15700 2    50   ~ 0
 ~RESET960
 $Comp
-L Connector_Generic:Conn_01x08 J?
+L Connector_Generic:Conn_01x08 J1
 U 1 1 74CFC736
 P 17000 16100
-F 0 "J?" H 17080 16092 50  0000 L CNN
+F 0 "J1" H 17080 16092 50  0000 L CNN
 F 1 "Conn_01x08" H 17080 16001 50  0000 L CNN
-F 2 "" H 17000 16100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 17000 16100 50  0001 C CNN
 F 3 "~" H 17000 16100 50  0001 C CNN
 	1    17000 16100
 	1    0    0    -1  
@@ -4247,4 +4242,10 @@ Text Label 28850 3350 0    50   ~ 0
 PA2
 Text Label 28850 3450 0    50   ~ 0
 PA3
+Text Label 31450 3250 2    50   ~ 0
+PA1
+Text Label 28850 3250 0    50   ~ 0
+PA1
+Text Label 28000 21350 1    50   ~ 0
+~RESET960
 $EndSCHEMATC
