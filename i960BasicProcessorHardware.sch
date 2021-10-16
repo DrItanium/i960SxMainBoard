@@ -4430,4 +4430,15 @@ Text Label 18200 18000 0    50   ~ 0
 INT2_BREAKOUT
 NoConn ~ 14900 16000
 NoConn ~ 14900 16100
+$Comp
+L Connector_Generic:Conn_01x08 J11
+U 1 1 782AFBD5
+P 9000 16000
+F 0 "J11" H 9080 15992 50  0000 L CNN
+F 1 "Conn_01x08" H 9080 15901 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 9000 16000 50  0001 C CNN
+F 3 "~" H 9000 16000 50  0001 C CNN
+	1    9000 16000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
