@@ -4531,17 +4531,6 @@ Wire Wire Line
 	25550 1450 26650 1450
 Wire Wire Line
 	25550 1550 26650 1550
-$Comp
-L Connector_Generic:Conn_01x01 J16
-U 1 1 7DEF5BF3
-P 26850 1550
-F 0 "J16" H 26930 1592 50  0000 L CNN
-F 1 "Conn_01x01" H 26930 1501 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 26850 1550 50  0001 C CNN
-F 3 "~" H 26850 1550 50  0001 C CNN
-	1    26850 1550
-	1    0    0    -1  
-$EndComp
 Text Label 26650 1450 2    50   ~ 0
 ~MCU_RESET
 Text Label 26650 1350 2    50   ~ 0
@@ -4621,4 +4610,52 @@ Wire Wire Line
 	24750 4400 23600 4400
 Wire Wire Line
 	24750 4500 23600 4500
+$Comp
+L Oscillator:CXO_DIP14 X?
+U 1 1 7E8F4FC6
+P 26300 5800
+F 0 "X?" H 26644 5846 50  0000 L CNN
+F 1 "CXO_DIP14" H 26644 5755 50  0000 L CNN
+F 2 "Oscillator:Oscillator_DIP-14" H 26750 5450 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf" H 26200 5800 50  0001 C CNN
+	1    26300 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	26000 5800 25400 5800
+NoConn ~ 25400 5800
+Wire Wire Line
+	26300 5500 26300 5100
+Wire Wire Line
+	26300 6100 26300 6400
+Wire Wire Line
+	26600 5800 27100 5800
+Text Label 27100 5800 2    50   ~ 0
+PCLK
+$Comp
+L power:GND #PWR?
+U 1 1 7ECFA12B
+P 26300 6400
+F 0 "#PWR?" H 26300 6150 50  0001 C CNN
+F 1 "GND" H 26305 6227 50  0000 C CNN
+F 2 "" H 26300 6400 50  0001 C CNN
+F 3 "" H 26300 6400 50  0001 C CNN
+	1    26300 6400
+	1    0    0    -1  
+$EndComp
+Text Label 26650 1550 2    50   ~ 0
+PCLK
+$Comp
+L power:+5V #PWR?
+U 1 1 7ECFB689
+P 26300 5100
+AR Path="/640CD6D6/7ECFB689" Ref="#PWR?"  Part="1" 
+AR Path="/7ECFB689" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 26300 4950 50  0001 C CNN
+F 1 "+5V" H 26315 5273 50  0000 C CNN
+F 2 "" H 26300 5100 50  0001 C CNN
+F 3 "" H 26300 5100 50  0001 C CNN
+	1    26300 5100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
