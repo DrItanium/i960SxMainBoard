@@ -3244,10 +3244,10 @@ Text Label 18200 17400 0    50   ~ 0
 Text Label 18200 17300 0    50   ~ 0
 DT\~R
 $Comp
-L Connector_Generic:Conn_02x39_Odd_Even J14
+L Connector_Generic:Conn_02x39_Odd_Even J10
 U 1 1 6A3C2242
 P 30100 2650
-F 0 "J14" H 30150 4767 50  0000 C CNN
+F 0 "J10" H 30150 4767 50  0000 C CNN
 F 1 "Conn_02x39_Odd_Even" H 30150 4676 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x39_P2.54mm_Vertical" H 30100 2650 50  0001 C CNN
 F 3 "~" H 30100 2650 50  0001 C CNN
@@ -3864,10 +3864,10 @@ F 3 "" H 9600 20050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J4
+L Connector_Generic:Conn_02x05_Odd_Even J2
 U 1 1 74368C12
 P 13750 4400
-F 0 "J4" H 13800 4817 50  0000 C CNN
+F 0 "J2" H 13800 4817 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 13800 4726 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 13750 4400 50  0001 C CNN
 F 3 "~" H 13750 4400 50  0001 C CNN
@@ -3919,10 +3919,10 @@ F 3 "" H 13550 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J5
+L Connector_Generic:Conn_02x05_Odd_Even J3
 U 1 1 744AC6A7
 P 13750 6200
-F 0 "J5" H 13800 6617 50  0000 C CNN
+F 0 "J3" H 13800 6617 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 13800 6526 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 13750 6200 50  0001 C CNN
 F 3 "~" H 13750 6200 50  0001 C CNN
@@ -3976,10 +3976,10 @@ F 3 "" H 13550 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J6
+L Connector_Generic:Conn_02x05_Odd_Even J4
 U 1 1 745F5BFF
 P 15150 6050
-F 0 "J6" H 15200 6467 50  0000 C CNN
+F 0 "J4" H 15200 6467 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 15200 6376 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 15150 6050 50  0001 C CNN
 F 3 "~" H 15150 6050 50  0001 C CNN
@@ -4033,10 +4033,10 @@ F 3 "" H 14950 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x06 J12
+L Connector_Generic:Conn_01x06 J8
 U 1 1 74743549
 P 17900 5000
-F 0 "J12" H 17980 4992 50  0000 L CNN
+F 0 "J8" H 17980 4992 50  0000 L CNN
 F 1 "Conn_01x06" H 17980 4901 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 17900 5000 50  0001 C CNN
 F 3 "~" H 17900 5000 50  0001 C CNN
@@ -4136,10 +4136,10 @@ Text Label 28850 3250 0    50   ~ 0
 Text Label 31450 3250 2    50   ~ 0
 ~INT0
 $Comp
-L Connector_Generic:Conn_01x03 J10
+L Connector_Generic:Conn_01x03 J6
 U 1 1 769276F2
 P 17000 17900
-F 0 "J10" H 17080 17942 50  0000 L CNN
+F 0 "J6" H 17080 17942 50  0000 L CNN
 F 1 "Conn_01x03" H 17080 17851 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 17000 17900 50  0001 C CNN
 F 3 "~" H 17000 17900 50  0001 C CNN
@@ -4173,10 +4173,10 @@ Wire Wire Line
 	19200 17200 18200 17200
 NoConn ~ 12050 16300
 $Comp
-L Connector_Generic:Conn_01x03 J11
+L Connector_Generic:Conn_01x03 J7
 U 1 1 780859B4
 P 17000 18900
-F 0 "J11" H 17080 18942 50  0000 L CNN
+F 0 "J7" H 17080 18942 50  0000 L CNN
 F 1 "Conn_01x03" H 17080 18851 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 17000 18900 50  0001 C CNN
 F 3 "~" H 17000 18900 50  0001 C CNN
@@ -4395,10 +4395,10 @@ GPB6
 Text Label 16050 15800 0    50   ~ 0
 GPB7
 $Comp
-L Connector_Generic:Conn_02x16_Odd_Even J9
+L Connector_Generic:Conn_02x16_Odd_Even J5
 U 1 1 79DF032E
 P 17000 16500
-F 0 "J9" H 17050 17417 50  0000 C CNN
+F 0 "J5" H 17050 17417 50  0000 C CNN
 F 1 "Conn_02x16_Odd_Even" H 17050 17326 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Vertical" H 17000 16500 50  0001 C CNN
 F 3 "~" H 17000 16500 50  0001 C CNN
@@ -4470,10 +4470,10 @@ GPB6
 Text Label 18050 15800 2    50   ~ 0
 GPB7
 $Comp
-L Connector_Generic:Conn_01x11 J13
+L Connector_Generic:Conn_01x11 J9
 U 1 1 79F7F59B
 P 19400 17500
-F 0 "J13" H 19480 17542 50  0000 L CNN
+F 0 "J9" H 19480 17542 50  0000 L CNN
 F 1 "Conn_01x11" H 19480 17451 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Vertical" H 19400 17500 50  0001 C CNN
 F 3 "~" H 19400 17500 50  0001 C CNN
