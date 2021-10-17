@@ -4856,17 +4856,6 @@ Wire Wire Line
 Wire Wire Line
 	21150 1200 20550 1200
 $Comp
-L Connector_Generic:Conn_02x08_Odd_Even J15
-U 1 1 83CA0986
-P 21350 2600
-F 0 "J15" H 21400 3117 50  0000 C CNN
-F 1 "Conn_02x08_Odd_Even" H 21400 3026 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 21350 2600 50  0001 C CNN
-F 3 "~" H 21350 2600 50  0001 C CNN
-	1    21350 2600
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_02x08_Odd_Even J16
 U 1 1 83CA23B3
 P 21350 3650
@@ -4875,17 +4864,6 @@ F 1 "Conn_02x08_Odd_Even" H 21400 4076 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 21350 3650 50  0001 C CNN
 F 3 "~" H 21350 3650 50  0001 C CNN
 	1    21350 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x08_Odd_Even J17
-U 1 1 83CA3842
-P 21350 4650
-F 0 "J17" H 21400 5167 50  0000 C CNN
-F 1 "Conn_02x08_Odd_Even" H 21400 5076 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 21350 4650 50  0001 C CNN
-F 3 "~" H 21350 4650 50  0001 C CNN
-	1    21350 4650
 	1    0    0    -1  
 $EndComp
 Text Label 20550 3000 0    50   ~ 0
@@ -5123,36 +5101,14 @@ COPROC1_AREF
 Wire Wire Line
 	21150 6550 20550 6550
 $Comp
-L Connector_Generic:Conn_02x08_Odd_Even J19
-U 1 1 847B5840
-P 21350 7150
-F 0 "J19" H 21400 7667 50  0000 C CNN
-F 1 "Conn_02x08_Odd_Even" H 21400 7576 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 21350 7150 50  0001 C CNN
-F 3 "~" H 21350 7150 50  0001 C CNN
-	1    21350 7150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_02x08_Odd_Even J20
 U 1 1 847B5846
-P 21350 8200
-F 0 "J20" H 21400 8717 50  0000 C CNN
-F 1 "Conn_02x08_Odd_Even" H 21400 8626 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 21350 8200 50  0001 C CNN
-F 3 "~" H 21350 8200 50  0001 C CNN
-	1    21350 8200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x08_Odd_Even J21
-U 1 1 847B584C
-P 21350 9200
-F 0 "J21" H 21400 9717 50  0000 C CNN
-F 1 "Conn_02x08_Odd_Even" H 21400 9626 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 21350 9200 50  0001 C CNN
-F 3 "~" H 21350 9200 50  0001 C CNN
-	1    21350 9200
+P 21350 7250
+F 0 "J20" H 21400 7767 50  0000 C CNN
+F 1 "Conn_02x08_Odd_Even" H 21400 7676 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 21350 7250 50  0001 C CNN
+F 3 "~" H 21350 7250 50  0001 C CNN
+	1    21350 7250
 	1    0    0    -1  
 $EndComp
 Text Label 23600 5900 0    50   ~ 0
@@ -5282,7 +5238,69 @@ COPROC1_PA6
 Text Label 22800 6450 2    50   ~ 0
 COPROC1_PA7
 Wire Wire Line
-	21150 6850 20000 6850
+	17500 7250 16350 7250
+Wire Wire Line
+	17500 7350 16350 7350
+Wire Wire Line
+	17500 7450 16350 7450
+Wire Wire Line
+	17500 7550 16350 7550
+Wire Wire Line
+	17500 7650 16350 7650
+Wire Wire Line
+	17500 7750 16350 7750
+Wire Wire Line
+	17500 7850 16350 7850
+Wire Wire Line
+	17500 7950 16350 7950
+Text Label 16350 7250 0    50   ~ 0
+COPROC1_PB0
+Text Label 16350 7350 0    50   ~ 0
+COPROC1_PB1
+Text Label 16350 7450 0    50   ~ 0
+COPROC1_PB2
+Text Label 16350 7550 0    50   ~ 0
+COPROC1_PB3
+Text Label 16350 7650 0    50   ~ 0
+COPROC1_PB4
+Text Label 16350 7750 0    50   ~ 0
+COPROC1_PB5
+Text Label 16350 7850 0    50   ~ 0
+COPROC1_PB6
+Text Label 16350 7950 0    50   ~ 0
+COPROC1_PB7
+Wire Wire Line
+	18000 7250 19150 7250
+Wire Wire Line
+	18000 7350 19150 7350
+Wire Wire Line
+	18000 7450 19150 7450
+Wire Wire Line
+	18000 7550 19150 7550
+Wire Wire Line
+	18000 7650 19150 7650
+Wire Wire Line
+	18000 7750 19150 7750
+Wire Wire Line
+	18000 7850 19150 7850
+Wire Wire Line
+	18000 7950 19150 7950
+Text Label 19150 7250 2    50   ~ 0
+COPROC1_PB0
+Text Label 19150 7350 2    50   ~ 0
+COPROC1_PB1
+Text Label 19150 7450 2    50   ~ 0
+COPROC1_PB2
+Text Label 19150 7550 2    50   ~ 0
+COPROC1_PB3
+Text Label 19150 7650 2    50   ~ 0
+COPROC1_PB4
+Text Label 19150 7750 2    50   ~ 0
+COPROC1_PB5
+Text Label 19150 7850 2    50   ~ 0
+COPROC1_PB6
+Text Label 19150 7950 2    50   ~ 0
+COPROC1_PB7
 Wire Wire Line
 	21150 6950 20000 6950
 Wire Wire Line
@@ -5297,24 +5315,24 @@ Wire Wire Line
 	21150 7450 20000 7450
 Wire Wire Line
 	21150 7550 20000 7550
-Text Label 20000 6850 0    50   ~ 0
-COPROC1_PB0
-Text Label 20000 6950 0    50   ~ 0
-COPROC1_PB1
-Text Label 20000 7050 0    50   ~ 0
-COPROC1_PB2
-Text Label 20000 7150 0    50   ~ 0
-COPROC1_PB3
-Text Label 20000 7250 0    50   ~ 0
-COPROC1_PB4
-Text Label 20000 7350 0    50   ~ 0
-COPROC1_PB5
-Text Label 20000 7450 0    50   ~ 0
-COPROC1_PB6
-Text Label 20000 7550 0    50   ~ 0
-COPROC1_PB7
 Wire Wire Line
-	21650 6850 22800 6850
+	21150 7650 20000 7650
+Text Label 20000 6950 0    50   ~ 0
+COPROC1_PC0
+Text Label 20000 7050 0    50   ~ 0
+COPROC1_PC1
+Text Label 20000 7150 0    50   ~ 0
+COPROC1_PC2
+Text Label 20000 7250 0    50   ~ 0
+COPROC1_PC3
+Text Label 20000 7350 0    50   ~ 0
+COPROC1_PC4
+Text Label 20000 7450 0    50   ~ 0
+COPROC1_PC5
+Text Label 20000 7550 0    50   ~ 0
+COPROC1_PC6
+Text Label 20000 7650 0    50   ~ 0
+COPROC1_PC7
 Wire Wire Line
 	21650 6950 22800 6950
 Wire Wire Line
@@ -5329,148 +5347,119 @@ Wire Wire Line
 	21650 7450 22800 7450
 Wire Wire Line
 	21650 7550 22800 7550
-Text Label 22800 6850 2    50   ~ 0
-COPROC1_PB0
+Wire Wire Line
+	21650 7650 22800 7650
 Text Label 22800 6950 2    50   ~ 0
-COPROC1_PB1
+COPROC1_PC0
 Text Label 22800 7050 2    50   ~ 0
-COPROC1_PB2
+COPROC1_PC1
 Text Label 22800 7150 2    50   ~ 0
-COPROC1_PB3
+COPROC1_PC2
 Text Label 22800 7250 2    50   ~ 0
-COPROC1_PB4
+COPROC1_PC3
 Text Label 22800 7350 2    50   ~ 0
-COPROC1_PB5
+COPROC1_PC4
 Text Label 22800 7450 2    50   ~ 0
-COPROC1_PB6
+COPROC1_PC5
 Text Label 22800 7550 2    50   ~ 0
-COPROC1_PB7
-Wire Wire Line
-	21150 7900 20000 7900
-Wire Wire Line
-	21150 8000 20000 8000
-Wire Wire Line
-	21150 8100 20000 8100
-Wire Wire Line
-	21150 8200 20000 8200
-Wire Wire Line
-	21150 8300 20000 8300
-Wire Wire Line
-	21150 8400 20000 8400
-Wire Wire Line
-	21150 8500 20000 8500
-Wire Wire Line
-	21150 8600 20000 8600
-Text Label 20000 7900 0    50   ~ 0
-COPROC1_PC0
-Text Label 20000 8000 0    50   ~ 0
-COPROC1_PC1
-Text Label 20000 8100 0    50   ~ 0
-COPROC1_PC2
-Text Label 20000 8200 0    50   ~ 0
-COPROC1_PC3
-Text Label 20000 8300 0    50   ~ 0
-COPROC1_PC4
-Text Label 20000 8400 0    50   ~ 0
-COPROC1_PC5
-Text Label 20000 8500 0    50   ~ 0
 COPROC1_PC6
-Text Label 20000 8600 0    50   ~ 0
+Text Label 22800 7650 2    50   ~ 0
 COPROC1_PC7
 Wire Wire Line
-	21650 7900 22800 7900
+	17500 8050 16350 8050
 Wire Wire Line
-	21650 8000 22800 8000
+	17500 8150 16350 8150
 Wire Wire Line
-	21650 8100 22800 8100
+	17500 8250 16350 8250
 Wire Wire Line
-	21650 8200 22800 8200
+	17500 8350 16350 8350
 Wire Wire Line
-	21650 8300 22800 8300
+	17500 8450 16350 8450
 Wire Wire Line
-	21650 8400 22800 8400
+	17500 8550 16350 8550
 Wire Wire Line
-	21650 8500 22800 8500
+	17500 8650 16350 8650
 Wire Wire Line
-	21650 8600 22800 8600
-Text Label 22800 7900 2    50   ~ 0
-COPROC1_PC0
-Text Label 22800 8000 2    50   ~ 0
-COPROC1_PC1
-Text Label 22800 8100 2    50   ~ 0
-COPROC1_PC2
-Text Label 22800 8200 2    50   ~ 0
-COPROC1_PC3
-Text Label 22800 8300 2    50   ~ 0
-COPROC1_PC4
-Text Label 22800 8400 2    50   ~ 0
-COPROC1_PC5
-Text Label 22800 8500 2    50   ~ 0
-COPROC1_PC6
-Text Label 22800 8600 2    50   ~ 0
-COPROC1_PC7
-Wire Wire Line
-	21150 8900 20000 8900
-Wire Wire Line
-	21150 9000 20000 9000
-Wire Wire Line
-	21150 9100 20000 9100
-Wire Wire Line
-	21150 9200 20000 9200
-Wire Wire Line
-	21150 9300 20000 9300
-Wire Wire Line
-	21150 9400 20000 9400
-Wire Wire Line
-	21150 9500 20000 9500
-Wire Wire Line
-	21150 9600 20000 9600
-Text Label 20000 8900 0    50   ~ 0
+	17500 8750 16350 8750
+Text Label 16350 8050 0    50   ~ 0
 COPROC1_PD0
-Text Label 20000 9000 0    50   ~ 0
+Text Label 16350 8150 0    50   ~ 0
 COPROC1_PD1
-Text Label 20000 9100 0    50   ~ 0
+Text Label 16350 8250 0    50   ~ 0
 COPROC1_PD2
-Text Label 20000 9200 0    50   ~ 0
+Text Label 16350 8350 0    50   ~ 0
 COPROC1_PD3
-Text Label 20000 9300 0    50   ~ 0
+Text Label 16350 8450 0    50   ~ 0
 COPROC1_PD4
-Text Label 20000 9400 0    50   ~ 0
+Text Label 16350 8550 0    50   ~ 0
 COPROC1_PD5
-Text Label 20000 9500 0    50   ~ 0
+Text Label 16350 8650 0    50   ~ 0
 COPROC1_PD6
-Text Label 20000 9600 0    50   ~ 0
+Text Label 16350 8750 0    50   ~ 0
 COPROC1_PD7
 Wire Wire Line
-	21650 8900 22800 8900
+	18000 8050 19150 8050
 Wire Wire Line
-	21650 9000 22800 9000
+	18000 8150 19150 8150
 Wire Wire Line
-	21650 9100 22800 9100
+	18000 8250 19150 8250
 Wire Wire Line
-	21650 9200 22800 9200
+	18000 8350 19150 8350
 Wire Wire Line
-	21650 9300 22800 9300
+	18000 8450 19150 8450
 Wire Wire Line
-	21650 9400 22800 9400
+	18000 8550 19150 8550
 Wire Wire Line
-	21650 9500 22800 9500
+	18000 8650 19150 8650
 Wire Wire Line
-	21650 9600 22800 9600
-Text Label 22800 8900 2    50   ~ 0
+	18000 8750 19150 8750
+Text Label 19150 8050 2    50   ~ 0
 COPROC1_PD0
-Text Label 22800 9000 2    50   ~ 0
+Text Label 19150 8150 2    50   ~ 0
 COPROC1_PD1
-Text Label 22800 9100 2    50   ~ 0
+Text Label 19150 8250 2    50   ~ 0
 COPROC1_PD2
-Text Label 22800 9200 2    50   ~ 0
+Text Label 19150 8350 2    50   ~ 0
 COPROC1_PD3
-Text Label 22800 9300 2    50   ~ 0
+Text Label 19150 8450 2    50   ~ 0
 COPROC1_PD4
-Text Label 22800 9400 2    50   ~ 0
+Text Label 19150 8550 2    50   ~ 0
 COPROC1_PD5
-Text Label 22800 9500 2    50   ~ 0
+Text Label 19150 8650 2    50   ~ 0
 COPROC1_PD6
-Text Label 22800 9600 2    50   ~ 0
+Text Label 19150 8750 2    50   ~ 0
 COPROC1_PD7
+$Comp
+L Connector_Generic:Conn_02x16_Odd_Even J?
+U 1 1 8791E5FC
+P 17700 7950
+F 0 "J?" H 17750 8867 50  0000 C CNN
+F 1 "Conn_02x16_Odd_Even" H 17750 8776 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Vertical" H 17700 7950 50  0001 C CNN
+F 3 "~" H 17700 7950 50  0001 C CNN
+	1    17700 7950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J15
+U 1 1 83CA0986
+P 21350 2600
+F 0 "J15" H 21400 3117 50  0000 C CNN
+F 1 "Conn_02x08_Odd_Even" H 21400 3026 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 21350 2600 50  0001 C CNN
+F 3 "~" H 21350 2600 50  0001 C CNN
+	1    21350 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J17
+U 1 1 83CA3842
+P 21350 4650
+F 0 "J17" H 21400 5167 50  0000 C CNN
+F 1 "Conn_02x08_Odd_Even" H 21400 5076 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 21350 4650 50  0001 C CNN
+F 3 "~" H 21350 4650 50  0001 C CNN
+	1    21350 4650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
