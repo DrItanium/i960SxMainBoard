@@ -5108,10 +5108,10 @@ COPROC1_AREF
 Wire Wire Line
 	21650 6550 22250 6550
 $Comp
-L Connector_Generic:Conn_02x09_Odd_Even J?
+L Connector_Generic:Conn_02x09_Odd_Even J18
 U 1 1 847B5828
 P 21350 6150
-F 0 "J?" H 21400 6767 50  0000 C CNN
+F 0 "J18" H 21400 6767 50  0000 C CNN
 F 1 "Conn_02x09_Odd_Even" H 21400 6676 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x09_P2.54mm_Vertical" H 21350 6150 50  0001 C CNN
 F 3 "~" H 21350 6150 50  0001 C CNN
@@ -5123,10 +5123,10 @@ COPROC1_AREF
 Wire Wire Line
 	21150 6550 20550 6550
 $Comp
-L Connector_Generic:Conn_02x08_Odd_Even J?
+L Connector_Generic:Conn_02x08_Odd_Even J19
 U 1 1 847B5840
 P 21350 7150
-F 0 "J?" H 21400 7667 50  0000 C CNN
+F 0 "J19" H 21400 7667 50  0000 C CNN
 F 1 "Conn_02x08_Odd_Even" H 21400 7576 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 21350 7150 50  0001 C CNN
 F 3 "~" H 21350 7150 50  0001 C CNN
@@ -5134,10 +5134,10 @@ F 3 "~" H 21350 7150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x08_Odd_Even J?
+L Connector_Generic:Conn_02x08_Odd_Even J20
 U 1 1 847B5846
 P 21350 8200
-F 0 "J?" H 21400 8717 50  0000 C CNN
+F 0 "J20" H 21400 8717 50  0000 C CNN
 F 1 "Conn_02x08_Odd_Even" H 21400 8626 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 21350 8200 50  0001 C CNN
 F 3 "~" H 21350 8200 50  0001 C CNN
@@ -5145,10 +5145,10 @@ F 3 "~" H 21350 8200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x08_Odd_Even J?
+L Connector_Generic:Conn_02x08_Odd_Even J21
 U 1 1 847B584C
 P 21350 9200
-F 0 "J?" H 21400 9717 50  0000 C CNN
+F 0 "J21" H 21400 9717 50  0000 C CNN
 F 1 "Conn_02x08_Odd_Even" H 21400 9626 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 21350 9200 50  0001 C CNN
 F 3 "~" H 21350 9200 50  0001 C CNN
