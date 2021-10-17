@@ -5981,7 +5981,7 @@
   (gr_text "FAIL\nCLKO\nPB2\nPB3\n~GPIO_CS\nMOSI0\nMISO0\nSCK0\nRX0\nTX0\nMISO1\nMOSI1\nSCK1\nPD5\nPD6\nPD7\nSCL\nSDA\n~PSRAM_EN0\n~PSRAM_EN1\n~MCU_READY~\n~TFT_CS\nTFT_DC\n~SD_EN\nW\\~R~\n~INT0\nPA2\nPA3\n~BE0~\n~BE1~\n~BLAST~\\~FAIL~\n~DEN~\nVIN\n+5V\n+3.3V\nGND\nPOT\nAREF\n~MCU_RESET~" (at 23.68804 80.26654) (layer F.SilkS)
     (effects (font (size 1.6 0.8) (thickness 0.15)) (justify left))
   )
-  (gr_text "i960Sx Type 1 Main Board \n(C) 2021 Joshua Scoggins\nREV 3" (at 40.54094 60.57646 90) (layer F.SilkS)
+  (gr_text "i960Sx Type 1 Main Board \n(C) 2021 Joshua Scoggins\nREV 3" (at 55.75808 59.16422) (layer F.SilkS)
     (effects (font (size 0.8 0.8) (thickness 0.1)))
   )
   (gr_text "~AS\nALE\n~LOCK\nDT\\~R~\n~DEN\nBA3\nBA2\nBA1\nHOLD\nHLDA\nINT2" (at 182.41518 76.38034) (layer F.SilkS)
