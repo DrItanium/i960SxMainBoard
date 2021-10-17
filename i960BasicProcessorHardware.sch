@@ -5430,10 +5430,10 @@ COPROC1_PD6
 Text Label 19150 8750 2    50   ~ 0
 COPROC1_PD7
 $Comp
-L Connector_Generic:Conn_02x16_Odd_Even J?
+L Connector_Generic:Conn_02x16_Odd_Even J19
 U 1 1 8791E5FC
 P 17700 7950
-F 0 "J?" H 17750 8867 50  0000 C CNN
+F 0 "J19" H 17750 8867 50  0000 C CNN
 F 1 "Conn_02x16_Odd_Even" H 17750 8776 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Vertical" H 17700 7950 50  0001 C CNN
 F 3 "~" H 17700 7950 50  0001 C CNN
